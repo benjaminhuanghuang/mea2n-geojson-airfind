@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AirportsComponent } from './components/airports/airports.component';
 
+import { AirportService } from './services/airport.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,7 @@ import { AirportsComponent } from './components/airports/airports.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [AirportService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

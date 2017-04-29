@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {AirportService} from '../../services/airport.service';
+
 @Component({
   selector: 'app-airports',
   templateUrl: './airports.component.html',
@@ -9,9 +11,11 @@ export class AirportsComponent implements OnInit {
   airports;
   state;
   
-  constructor() { }
+  constructor(private airportService: AirportService) { }
 
   ngOnInit() {
+    this.airportService.getAirport().subscribe(airports=>{
+      this.airports = airports;
+    });
   }
-
 }

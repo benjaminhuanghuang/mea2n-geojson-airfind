@@ -1,3 +1,15 @@
-<p>
-  airports works!
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="well" *ngFor="let airport of airports">
+      <h4>{{airport.name}}</h4>
+      <ul>
+        <li>
+          <strong>Type:</strong>{{airport.type}}
+        </li>
+        <li>
+          <strong>Code:</strong>{{airport.code}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

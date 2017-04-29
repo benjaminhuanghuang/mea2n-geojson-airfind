@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import {AirportService} from './services/airport.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

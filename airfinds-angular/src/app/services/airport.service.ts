@@ -1,0 +1,13 @@
+import { Injectable } from '@angular/core';
+import { Http, Headers} from '@angular/http';
+import 'rxjs/add/operator/map';
+
+@Injectable()
+export class AirportService {
+
+  constructor(private http:Http) { }
+
+  getAirport(){
+    return this.http.get('http://localhost:3000/api/airports').map(res=>res.json());
+  }
+}

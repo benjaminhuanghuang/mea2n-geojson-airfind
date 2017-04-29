@@ -31,3 +31,7 @@
     $ cd src/app/components
     $ ng g component navbar
     $ ng g component airports
+
+## build
+    $ ng build
+    copy dist to client

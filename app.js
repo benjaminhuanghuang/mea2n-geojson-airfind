@@ -52,7 +52,7 @@ app.get('/api/states', (req, res)=>{
 });
 
 // Airports by state
-app.get('/api/airports/states/:state', (req, res)=>{
+app.get('/api/airports/state/:state', (req, res)=>{
     Airport.getAirportsByState(req.params.state, (err, docs)=>{
         if(err){
             res.send(err);

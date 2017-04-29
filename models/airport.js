@@ -52,5 +52,4 @@ module.exports.getAirportsByState = (stateCode, callback, limit) => {
             ['name', 'ascending']
         ]);
     });
-    Customer.findById(id, callback);
 }

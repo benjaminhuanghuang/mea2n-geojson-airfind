@@ -10,4 +10,9 @@ export class AirportService {
   getAirport(){
     return this.http.get('http://localhost:3000/api/airports').map(res=>res.json());
   }
+
+  getAirportByState(state)
+  {
+    return this.http.get('http://localhost:3000/api/airports/state/'+state).map(res=>res.json());
+  }
 }

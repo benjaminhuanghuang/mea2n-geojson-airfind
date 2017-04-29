@@ -18,4 +18,11 @@ export class AirportsComponent implements OnInit {
       this.airports = airports;
     });
   }
+
+  searchByState(){
+    this.airportService.getAirportByState(this.state).subscribe(airports=>{
+      this.airports = airports;
+    });
+  }
 }
+ 
